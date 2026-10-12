@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Gordion Lingua</title>
+<meta name="description" content="Gordion Lingua uygulamasının gizlilik politikası / Privacy policy of the Gordion Lingua app.">
+<style>
+  :root {
+    --bg: #faf9fc; --card: #ffffff; --text: #1d1b22; --muted: #625d6e;
+    --brand: #6c47ff; --border: #e6e1ef; --soft: #f4f1fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141218; --card: #1e1b24; --text: #ece8f4; --muted: #a59fb3;
+      --brand: #9c84ff; --border: #322c3d; --soft: #241f2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65; font-size: 16px;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 32px 16px 64px; }
+  .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
+  .top a { color: var(--brand); text-decoration: none; font-weight: 600; }
+  .lang { display: flex; gap: 8px; }
+  .lang a { padding: 6px 14px; border: 1px solid var(--border); border-radius: 999px; font-size: 14px; }
+  article {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 28px 24px; margin-bottom: 24px;
+  }
+  h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -0.3px; }
+  .date { color: var(--muted); margin: 0 0 20px; font-size: 14px; }
+  h2 { font-size: 19px; margin: 28px 0 8px; }
+  h3 { font-size: 16px; margin: 18px 0 4px; }
+  p { margin: 8px 0; }
+  ul { margin: 8px 0; padding-left: 22px; }
+  li { margin: 5px 0; }
+  .summary { background: var(--soft); border-radius: 12px; padding: 14px 16px; margin: 16px 0; }
+  a { color: var(--brand); overflow-wrap: anywhere; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <a href="index.html">← Gordion Lingua</a>
+    <div class="lang"><a href="#tr">Türkçe</a><a href="#en">English</a></div>
+  </div>
+
+  <!-- ═══════════════════════════ TÜRKÇE ═══════════════════════════ -->
+  <article id="tr" lang="tr">
+    <h1>Gizlilik Politikası</h1>
+    <p class="date">Yürürlük tarihi: 12 Ekim 2026</p>
+
+    <p>Bu politika, <strong>Gordion Lingua</strong> Android uygulamasının (“Uygulama”) hangi verileri nasıl işlediğini açıklar.
+      Uygulama, bağımsız geliştirici Mehmet Ali Canyurt tarafından <strong>Gordion Lingua</strong> geliştirici adıyla geliştirilmektedir.</p>
+
+    <div class="summary">
+      <strong>Kısaca:</strong> Uygulamada üyelik veya hesap yoktur ve geliştiricinin verilerinizi topladığı bir sunucu bulunmaz.
+      Kelimeleriniz, ilerlemeniz ve ayarlarınız cihazınızda saklanır. Çeviri, analiz ve ses tanıma gibi bazı özellikler,
+      yalnızca siz kullandığınızda, ilgili metni veya ses kaydını aşağıda listelenen üçüncü taraf hizmetlere gönderir.
+    </div>
+
+    <h2>1. Cihazınızda saklanan veriler</h2>
+    <p>Aşağıdaki veriler yalnızca cihazınızda tutulur ve geliştiriciye gönderilmez:</p>
+    <ul>
+      <li>Kaydettiğiniz kelimeler, flashcard’lar, tekrar geçmişi ve istatistikler</li>
+      <li>Uygulama ayarları, dil tercihleri ve okuma ilerlemesi</li>
+      <li>Girdiğiniz Groq ve/veya Gemini API anahtarları</li>
+      <li>Uygulama içinde oluşturduğunuz ses kayıtları</li>
+      <li>Uygulamada açtığınız PDF ve e-kitap dosyaları (dosyalar bir sunucuya yüklenmez)</li>
+    </ul>
+    <p>Cihazınızda Android’in Google hesabı yedeklemesi açıksa, bu veriler Android tarafından Google hesabınıza
+      yedeklenebilir. Bu yedekleme Google’ın kontrolündedir ve cihaz ayarlarınızdan kapatılabilir.</p>
+
+    <h2>2. Üçüncü taraf hizmetlere gönderilen veriler</h2>
+    <p>Aşağıdaki özellikler çalışmak için ilgili hizmete veri gönderir. Bu veriler geliştirici tarafından görülmez veya saklanmaz;
+      ilgili hizmetin kendi gizlilik politikasına tabidir.</p>
+
+    <h3>Groq (yapay zekâ)</h3>
+    <p>Cümle analizi, kelime keşfi ve benzeri özelliklerde analiz edilecek metin; konuşma ve gölge pratiğinde ses kaydınız
+      (yazıya dökülmesi için) ve seslendirme özelliğinde seslendirilecek metin, <strong>sizin girdiğiniz API anahtarıyla</strong>
+      Groq’a gönderilir. <a href="https://groq.com/privacy-policy/">Groq Gizlilik Politikası</a></p>
+
+    <h3>Google Gemini API (yapay zekâ, isteğe bağlı)</h3>
+    <p>Gemini anahtarı girdiyseniz, Groq kullanılamadığında aynı metin <strong>sizin anahtarınızla</strong> Google Gemini API’ye gönderilir.
+      <a href="https://ai.google.dev/gemini-api/terms">Gemini API Koşulları</a> ·
+      <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a></p>
+
+    <h3>Google Çeviri</h3>
+    <p>Okuma ekranında bir kelimeye veya cümleye dokunduğunuzda, çevrilecek metin Google’ın çeviri hizmetine gönderilir.
+      <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a></p>
+
+    <h3>Google ML Kit (çevrimdışı çeviri)</h3>
+    <p>Çevrimdışı çeviri için dil modelleri Google’dan indirilir; çeviri işlemi cihazınızda yapılır.
+      ML Kit, hizmeti işletmek için sınırlı cihaz ve kullanım bilgisini Google’a gönderebilir.
+      <a href="https://developers.google.com/ml-kit/terms">ML Kit Koşulları</a></p>
+
+    <h3>YouTube</h3>
+    <p>Gölge pratiğinde videolar YouTube üzerinden oynatılır. Bu sırada YouTube kendi koşullarına göre veri işleyebilir.
+      <a href="https://www.youtube.com/t/terms">YouTube Hizmet Şartları</a> ·
+      <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a></p>
+
+    <h3>Google AdMob (reklamlar)</h3>
+    <p>Uygulama reklam gösterebilir. Reklamlar için Google AdMob; reklam kimliği, cihaz bilgileri, yaklaşık konum (IP adresi)
+      ve reklam etkileşimleri gibi verileri işleyebilir. Kişiselleştirilmiş reklamları cihazınızın
+      <em>Ayarlar → Google → Reklamlar</em> bölümünden sınırlayabilir veya reklam kimliğinizi silebilirsiniz.
+      <a href="https://policies.google.com/technologies/partner-sites">Google’ın iş ortağı uygulamalarındaki veri kullanımı</a></p>
+
+    <h3>Google Play Faturalandırma</h3>
+    <p>Uygulama içi satın alma veya abonelik yaparsanız, ödeme işlemi tamamen Google Play tarafından yürütülür.
+      Kart veya ödeme bilgileriniz geliştiriciyle paylaşılmaz.
+      <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a></p>
+
+    <h2>3. Uygulama izinleri</h2>
+    <ul>
+      <li><strong>Mikrofon:</strong> Yalnızca siz bir kayıt başlattığınızda kullanılır (okuma, konuşma ve gölge pratiği).
+        Kayıtlar cihazınızda saklanır; ses tanıma gerektiren özelliklerde yukarıda belirtildiği gibi Groq’a gönderilir.</li>
+      <li><strong>İnternet ve ağ durumu:</strong> Çeviri, analiz ve reklamlar için ve çevrimdışı moda geçmek için kullanılır.</li>
+      <li><strong>Bildirimler:</strong> Hatırlatma ve bilgilendirme bildirimleri göstermek için kullanılır; cihaz ayarlarından kapatılabilir.</li>
+    </ul>
+
+    <h2>4. Çocuklar</h2>
+    <p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bilerek bu yaş grubundan kişisel veri toplanmaz.</p>
+
+    <h2>5. Verilerinizi silme</h2>
+    <ul>
+      <li>Cihazınızdaki tüm uygulama verilerini <em>Ayarlar → Uygulamalar → Gordion Lingua → Depolama → Verileri temizle</em>
+        ile veya uygulamayı kaldırarak silebilirsiniz.</li>
+      <li>API anahtarlarınızı uygulamanın Ayarlar ekranından istediğiniz zaman silebilirsiniz.</li>
+      <li>Üçüncü taraf hizmetlerin işlediği veriler için ilgili hizmetin kendi silme seçeneklerini kullanabilirsiniz.</li>
+    </ul>
+
+    <h2>6. Güvenlik</h2>
+    <p>Uygulamanın üçüncü taraf hizmetlerle iletişimi şifreli bağlantı (HTTPS) üzerinden yapılır.</p>
+
+    <h2>7. Haklarınız</h2>
+    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve ilgili mevzuat kapsamındaki haklarınızla ilgili sorularınız için
+      aşağıdaki adresten bize ulaşabilirsiniz. Geliştirici kişisel verilerinizi kendi sunucularında saklamadığından,
+      çoğu talep cihazınızdaki verileri silerek doğrudan sizin tarafınızdan yerine getirilebilir.</p>
+
+    <h2>8. Değişiklikler</h2>
+    <p>Bu politika güncellenebilir. Güncel sürüm her zaman bu sayfada yayımlanır ve yürürlük tarihi yukarıda belirtilir.</p>
+
+    <h2>9. İletişim</h2>
+    <p>Gordion Lingua — <a href="mailto:gordionlingua@gmail.com">gordionlingua@gmail.com</a></p>
+  </article>
+
+  <!-- ═══════════════════════════ ENGLISH ═══════════════════════════ -->
+  <article id="en" lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="date">Effective date: October 12, 2026</p>
+
+    <p>This policy explains how the <strong>Gordion Lingua</strong> Android app (“the App”) handles data.
+      The App is developed by independent developer Mehmet Ali Canyurt under the developer name <strong>Gordion Lingua</strong>.</p>
+
+    <div class="summary">
+      <strong>In short:</strong> The App has no sign-up or user accounts, and the developer does not run a server that collects your data.
+      Your words, progress and settings are stored on your device. Some features — such as translation, analysis and speech recognition —
+      send the relevant text or audio to the third-party services listed below, and only when you use them.
+    </div>
+
+    <h2>1. Data stored on your device</h2>
+    <p>The following data stays on your device and is not sent to the developer:</p>
+    <ul>
+      <li>Saved words, flashcards, review history and statistics</li>
+      <li>App settings, language preferences and reading progress</li>
+      <li>Groq and/or Gemini API keys you enter</li>
+      <li>Audio recordings you create in the App</li>
+      <li>PDF and e-book files you open in the App (files are not uploaded to any server)</li>
+    </ul>
+    <p>If Android’s Google account backup is enabled on your device, Android may back up this data to your Google account.
+      That backup is controlled by Google and can be turned off in your device settings.</p>
+
+    <h2>2. Data sent to third-party services</h2>
+    <p>The features below send data to the relevant service in order to work. This data is not seen or stored by the developer
+      and is subject to each service’s own privacy policy.</p>
+
+    <h3>Groq (AI)</h3>
+    <p>Text you analyze (sentence analysis, word discovery and similar features), your voice recordings in speaking and shadowing
+      practice (for transcription) and text to be read aloud are sent to Groq <strong>using the API key you provide</strong>.
+      <a href="https://groq.com/privacy-policy/">Groq Privacy Policy</a></p>
+
+    <h3>Google Gemini API (AI, optional)</h3>
+    <p>If you enter a Gemini key, the same text is sent to the Google Gemini API <strong>using your key</strong> when Groq is unavailable.
+      <a href="https://ai.google.dev/gemini-api/terms">Gemini API Terms</a> ·
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
+
+    <h3>Google Translate</h3>
+    <p>When you tap a word or sentence in the reader, the text is sent to Google’s translation service.
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
+
+    <h3>Google ML Kit (offline translation)</h3>
+    <p>Language models for offline translation are downloaded from Google; translation itself runs on your device.
+      ML Kit may send limited device and usage information to Google to operate the service.
+      <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms</a></p>
+
+    <h3>YouTube</h3>
+    <p>Videos in shadowing practice are played through YouTube, which may process data under its own terms.
+      <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> ·
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
+
+    <h3>Google AdMob (ads)</h3>
+    <p>The App may show ads. Google AdMob may process data such as the advertising ID, device information, approximate location
+      (IP address) and ad interactions. You can limit personalized ads or delete your advertising ID in your device’s
+      <em>Settings → Google → Ads</em>.
+      <a href="https://policies.google.com/technologies/partner-sites">How Google uses data from partner apps</a></p>
+
+    <h3>Google Play Billing</h3>
+    <p>If you make an in-app purchase or subscribe, payment is handled entirely by Google Play.
+      Your card or payment details are not shared with the developer.
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
+
+    <h2>3. App permissions</h2>
+    <ul>
+      <li><strong>Microphone:</strong> Used only when you start a recording (reading, speaking and shadowing practice).
+        Recordings are stored on your device; for features that need speech recognition they are sent to Groq as described above.</li>
+      <li><strong>Internet and network state:</strong> Used for translation, analysis and ads, and to switch to offline mode.</li>
+      <li><strong>Notifications:</strong> Used to show reminders and information; can be turned off in device settings.</li>
+    </ul>
+
+    <h2>4. Children</h2>
+    <p>The App is not directed at children under 13, and we do not knowingly collect personal data from them.</p>
+
+    <h2>5. Deleting your data</h2>
+    <ul>
+      <li>You can delete all app data on your device via <em>Settings → Apps → Gordion Lingua → Storage → Clear data</em>,
+        or by uninstalling the App.</li>
+      <li>You can remove your API keys at any time from the App’s Settings screen.</li>
+      <li>For data processed by third-party services, use that service’s own deletion options.</li>
+    </ul>
+
+    <h2>6. Security</h2>
+    <p>The App communicates with third-party services over encrypted connections (HTTPS).</p>
+
+    <h2>7. Your rights</h2>
+    <p>For questions about your rights under applicable data protection laws (including Turkey’s KVKK and the EU GDPR),
+      contact us at the address below. Because the developer does not store your personal data on its own servers,
+      most requests can be fulfilled directly by deleting the data on your device.</p>
+
+    <h2>8. Changes</h2>
+    <p>This policy may be updated. The current version is always published on this page, with its effective date shown above.</p>
+
+    <h2>9. Contact</h2>
+    <p>Gordion Lingua — <a href="mailto:gordionlingua@gmail.com">gordionlingua@gmail.com</a></p>
+  </article>
+
+  <footer>© 2026 Gordion Lingua</footer>
+
+</div>
+</body>
+</html>

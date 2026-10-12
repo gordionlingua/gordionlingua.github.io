@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gordion Lingua</title>
+<meta name="description" content="Gordion Lingua — okuyarak, dinleyerek ve konuşarak dil öğrenme uygulaması.">
+<style>
+  :root {
+    --bg: #faf9fc; --card: #ffffff; --text: #1d1b22; --muted: #625d6e;
+    --brand: #6c47ff; --brand-soft: #efeaff; --border: #e6e1ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141218; --card: #1e1b24; --text: #ece8f4; --muted: #a59fb3;
+      --brand: #9c84ff; --brand-soft: #2a2340; --border: #322c3d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { text-align: center; margin-bottom: 40px; }
+  .logo {
+    width: 72px; height: 72px; border-radius: 20px; margin: 0 auto 16px;
+    background: linear-gradient(135deg, #6c47ff, #a78bfa);
+    display: grid; place-items: center; color: #fff; font-size: 34px; font-weight: 800;
+  }
+  h1 { margin: 0; font-size: 32px; letter-spacing: -0.5px; }
+  .tag { color: var(--muted); margin: 8px 0 0; font-size: 17px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 24px; margin-bottom: 16px;
+  }
+  h2 { font-size: 19px; margin: 0 0 12px; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin: 6px 0; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 24px; }
+  .btn {
+    display: inline-block; padding: 10px 18px; border-radius: 999px; text-decoration: none;
+    font-weight: 600; font-size: 15px; border: 1px solid var(--brand); color: var(--brand);
+  }
+  .btn.primary { background: var(--brand); color: #fff; }
+  .soon { color: var(--muted); border-color: var(--border); cursor: default; }
+  .en { color: var(--muted); font-size: 14px; margin-top: 10px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 40px; }
+  a { color: var(--brand); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">G</div>
+    <h1>Gordion Lingua</h1>
+    <p class="tag">Okuyarak, dinleyerek ve konuşarak dil öğren.</p>
+    <div class="links">
+      <a class="btn primary" href="privacy.html">Gizlilik Politikası</a>
+      <a class="btn" href="mailto:gordionlingua@gmail.com">İletişim</a>
+      <span class="btn soon">Google Play — yakında</span>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>Gordion Lingua nedir?</h2>
+    <p>Gordion Lingua, Türkçe, İngilizce ve İspanyolca arasında dil öğrenmek için geliştirilmiş bir Android uygulamasıdır.
+      Kendi seçtiğin metinler, kitaplar ve videolar üzerinden öğrenmeni sağlar.</p>
+    <ul>
+      <li><strong>Okuma:</strong> PDF ve e-kitap aç, bilmediğin kelimeye dokun, anında çevirisini gör.</li>
+      <li><strong>Cümle analizi:</strong> Cümleleri öbeklere ayırıp anlam karşılıklarını yan yana incele.</li>
+      <li><strong>Kelimelerim ve Flashcard:</strong> Kaydettiğin kelimeleri aralıklı tekrar ile pekiştir.</li>
+      <li><strong>Konuşma ve gölge pratiği:</strong> Sesli tekrar yap, telaffuzunu geliştir.</li>
+      <li><strong>Çevrimdışı çeviri:</strong> İnternet yokken de temel çeviri cihazında çalışır.</li>
+    </ul>
+    <p class="en">Gordion Lingua is an Android app for learning languages (Turkish, English, Spanish) through your own texts, books and videos.</p>
+  </section>
+
+  <section class="card">
+    <h2>Geliştirici</h2>
+    <p><strong>Gordion Lingua</strong>, bağımsız bir geliştirici tarafından geliştirilmektedir.<br>
+      Soru, öneri ve destek için: <a href="mailto:gordionlingua@gmail.com">gordionlingua@gmail.com</a></p>
+    <p class="en">Gordion Lingua is developed by an independent developer. Contact: gordionlingua@gmail.com</p>
+  </section>
+
+  <footer>
+    © 2026 Gordion Lingua · <a href="privacy.html">Gizlilik Politikası / Privacy Policy</a>
+  </footer>
+
+</div>
+</body>
+</html>
