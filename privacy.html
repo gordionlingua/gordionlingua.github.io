@@ -76,8 +76,8 @@
       <strong>Kısaca:</strong> Uygulamada üyelik veya hesap yoktur ve geliştiricinin verilerinizi topladığı bir sunucu bulunmaz.
       Kelimeleriniz, ilerlemeniz ve ayarlarınız cihazınızda saklanır. Çeviri, analiz ve ses tanıma gibi bazı özellikler,
       yalnızca siz kullandığınızda, ilgili metni veya ses kaydını aşağıda listelenen üçüncü taraf hizmetlere gönderir.
-      Geliştirici, kullanıcı verisi toplayan bir sunucu işletmez. Size ait bilgiler geliştiriciye doğrudan yalnızca siz bize e-posta
-      gönderirseniz ulaşır (bölüm 3). Bunun dışında geliştirici, Google Play Console’da indirme, satış ve abonelik raporlarını; Android’in teşhis
+      Geliştirici kendi barındırdığı bir sunucu işletmez. Size ait bilgiler geliştiriciye doğrudan yalnızca siz bize e-posta
+      gönderirseniz veya bir yapay zekâ yanıtını bildirirseniz ulaşır (bölüm 3). Bunun dışında geliştirici, Google Play Console’da indirme, satış ve abonelik raporlarını; Android’in teşhis
       verisi paylaşımı açık cihazlardan gönderdiği kilitlenme ve “uygulama yanıt vermiyor” raporlarını (ör. cihaz modeli, Android ve
       uygulama sürümü, hata kaydı) görebilir. AdMob panelinde ise reklam gösterim ve gelir istatistiklerini görebilir. Bu raporların
       kapsamı Google’ın koşullarıyla belirlenir; geliştirici bunları yalnızca uygulamayı iyileştirmek ve hataları gidermek için kullanır.
@@ -121,7 +121,7 @@
 
     <h3>Google ML Kit (cihaz içi çeviri)</h3>
     <p>Dokunduğunuz kelimeler (ve Groq anahtarınız yoksa tüm çeviriler) cihazınızda ML Kit ile çevrilir. Dil modelleri Google’dan indirilir; çeviri işlemi cihazınızda yapılır ve çevrilen metin cihazdan çıkmaz.
-      ML Kit, hizmeti işletmek için sınırlı teknik bilgiyi (ör. cihaz bilgisi ve kullanım ölçümleri) Google’a gönderebilir.
+      ML Kit, hizmeti işletmek ve kullanımı ölçmek için cihaz ve uygulama bilgileri, performans ve tanı ölçümleri ile seçilen kaynak ve hedef dil gibi sınırlı teknik bilgileri Google’a gönderebilir.
       <a href="https://developers.google.com/ml-kit/terms">ML Kit Koşulları</a></p>
 
     <h3>YouTube</h3>
@@ -153,12 +153,17 @@
     <p>Uygulamadaki <em>Geri bildirim gönder</em> düğmesi
       cihazınızdaki e-posta uygulamasını açar; uygulamanın kendisi hiçbir veri göndermez.
       E-postayı gönderirseniz e-posta adresiniz, mesajınız, mesajın altına eklenen teknik bilgiler (uygulama sürümü, cihaz modeli,
-      Android sürümü, uygulama dili) geliştiriciye ulaşır. <em>Yanıtı bildir</em> ile bir yapay zekâ yanıtını bildirdiğinizde
-      e-postaya ayrıca seçtiğiniz sebep, bildirdiğiniz yanıtın metni, ilgili özellik ve uygulama sürümü eklenir. Bunları göndermeden önce düzenleyebilir veya silebilirsiniz.
+      Android sürümü, uygulama dili) geliştiriciye ulaşır. Bunları göndermeden önce düzenleyebilir veya silebilirsiniz.
       Bu bilgiler yalnızca size yanıt vermek ve sorunları çözmek için kullanılır. Yazışmalar Gmail hizmeti aracılığıyla
       saklanır ve Google’ın ilgili hizmet koşullarına tabidir; geliştirici bunları pazarlama veya başka amaçlarla paylaşmaz. Kanuni
       yükümlülükler saklıdır. E-postalar geliştiricinin Gmail hesabında, yani Google’ın yurt dışındaki sunucularında saklanır ve
       son yazışma tarihinden itibaren en fazla 2 yıl tutulur. Hukuki bir uyuşmazlık veya kanuni saklama yükümlülüğü varsa ilgili yazışmalar yalnızca gerekli süre boyunca daha uzun saklanabilir. Yazışmalarınızın daha önce silinmesini istediğinizde aynı adrese yazmanız yeterlidir.</p>
+    <p><strong>Yapay zekâ yanıtı bildirimleri:</strong> <em>Yanıtı bildir</em> penceresinden gönderdiğiniz bildirim (seçtiğiniz sebep,
+      bildirdiğiniz yapay zekâ yanıtının metni, varsa açıklamanız, ilgili özellik, uygulama sürümü ve dili) uygulamanın içinden, şifreli
+      bağlantıyla geliştiricinin Google hesabındaki bir Google E-Tablolar dosyasına (Google Apps Script aracılığıyla) iletilir. Bildirimle
+      birlikte e-posta adresiniz, adınız veya cihaz kimliğiniz gönderilmez; Google, isteği işlerken IP adresi gibi teknik bilgileri kendi
+      koşulları kapsamında işleyebilir. Bildirimler yalnızca yapay zekâ içeriğini incelemek, uygunsuz yanıtları önlemek ve özellikleri
+      iyileştirmek için kullanılır ve en fazla 1 yıl saklanır; daha eski bildirimler otomatik silinir. Açıklama veya yapıştırma alanına adınızı, e-posta adresinizi, telefon numaranızı, sağlık bilgisi gibi kişisel veya özel nitelikli bilgiler yazmayın; yazarsanız bu bilgiler de bildirimle iletilir. Başarılı her bildirime rastgele bir bildirim numarası verilir ve ekranda gösterilir; bu numara cihaz kimliği değildir ve sizi izlemek için kullanılmaz. Bildirim gönderilemezse e-postayla gönderme seçeneği sunulur.</p>
 
     <h2>4. Hukuki sebepler ve yurt dışına aktarım</h2>
     <p><strong>Toplama yöntemi:</strong> Kişisel verileriniz; uygulamaya yazdığınız veya eklediğiniz içerikler, başlattığınız ses
@@ -168,6 +173,7 @@
     <div class="tw"><table>
       <tr><th>İşleme</th><th>Amaç</th><th>Hukuki sebep (KVKK)</th><th>Nereye</th></tr>
       <tr><td data-label="İşleme">Destek e-postaları</td><td data-label="Amaç">Size yanıt vermek, sorunları çözmek</td><td data-label="Hukuki sebep (KVKK)">Md. 5/2-f: meşru menfaat (sizin başlattığınız iletişime yanıt verilmesi)</td><td data-label="Nereye">Google (Gmail), yurt dışı</td></tr>
+      <tr><td data-label="İşleme">Yapay zekâ yanıtı bildirimleri</td><td data-label="Amaç">Bildirimi incelemek, uygunsuz yanıtları önlemek, özellikleri iyileştirmek</td><td data-label="Hukuki sebep (KVKK)">Md. 5/2-f: meşru menfaat (sizin başlattığınız bildirimin incelenmesi)</td><td data-label="Nereye">Google (Apps Script / E-Tablolar), yurt dışı</td></tr>
       <tr><td data-label="İşleme">Reklamlar (yalnızca deneme bittikten sonra, abone olmayanlarda)</td><td data-label="Amaç">Reklam gösterimi, ölçümü, dolandırıcılığı önleme</td><td data-label="Hukuki sebep (KVKK)">Google, kendi koşulları kapsamında veri sorumlusu olarak işler; AEA, Birleşik Krallık ve İsviçre’de Google’ın izin ekranıyla izniniz alınır</td><td data-label="Nereye">Google AdMob, yurt dışı</td></tr>
       <tr><td data-label="İşleme">Groq’a gönderilen metin ve ses</td><td data-label="Amaç">Cümle analizi, kelime keşfi, konuşma ve gölge pratiği, cümle çevirisi</td><td data-label="Hukuki sebep (KVKK)">Md. 5/2-c: istediğiniz özelliğin sunulması (Kullanım Koşulları); istek sizin anahtarınızla doğrudan cihazınızdan gönderilir</td><td data-label="Nereye">Groq, yurt dışı</td></tr>
       <tr><td data-label="İşleme">ML Kit teknik verileri</td><td data-label="Amaç">Cihaz içi çeviri hizmetinin işletilmesi, dil modellerinin indirilmesi</td><td data-label="Hukuki sebep (KVKK)">Google, ML Kit koşulları kapsamında işler</td><td data-label="Nereye">Google, yurt dışı</td></tr>
@@ -195,12 +201,13 @@
         ile veya uygulamayı kaldırarak silebilirsiniz.</li>
       <li>API anahtarlarınızı uygulamanın Ayarlar ekranından istediğiniz zaman silebilirsiniz.</li>
       <li>Bize gönderdiğiniz e-postaların silinmesini <a href="mailto:gordionlingua@gmail.com">gordionlingua@gmail.com</a> adresine yazarak isteyebilirsiniz.</li>
+      <li>Gönderdiğiniz bir yapay zekâ bildiriminin silinmesini, ekranda gösterilen bildirim numarasını aynı adrese yazarak isteyebilirsiniz.</li>
       <li>Üçüncü taraf hizmetlerin işlediği veriler için ilgili hizmetin kendi silme seçeneklerini kullanabilirsiniz. Cihazınızdaki
         verileri silmek, daha önce bu hizmetlere gönderilmiş verileri silmez; bu veriler ilgili hizmetin saklama koşullarına tabidir.</li>
     </ul>
 
     <h2>8. Güvenlik</h2>
-    <p>Uygulama, kullanıcı verisi toplayan bir sunucu kullanmaz. Uygulamanın üçüncü taraf hizmetlerle iletişimi şifreli bağlantı (HTTPS)
+    <p>Geliştirici kendi barındırdığı bir sunucu kullanmaz; yapay zekâ yanıtı bildirimleri Google altyapısında, yalnızca geliştiricinin erişebildiği özel bir tabloda tutulur ve bir yıldan eski olanlar otomatik silinir. Uygulamanın üçüncü taraf hizmetlerle iletişimi şifreli bağlantı (HTTPS)
       üzerinden yapılır. Uygulama verileri ve API anahtarları, Android’in diğer uygulamaların erişimine kapalı özel uygulama depolama
       alanında tutulur. API anahtarları uygulama kayıtlarına (log) yazılmaz; uygulamanın kendi yedek dosyasına ve Android’in sistem yedeğine eklenmez.</p>
 
@@ -209,7 +216,7 @@
       yaşıyorsanız AB Genel Veri Koruma Tüzüğü (GDPR) gibi diğer mevzuattan doğan benzer haklarınızı kullanmak için
       <a href="mailto:gordionlingua@gmail.com">gordionlingua@gmail.com</a> adresine yazabilirsiniz. Başvurular KVKK’nın 13. maddesi
       uyarınca en geç 30 gün içinde yanıtlanır. Kişisel Verileri Koruma Kurulu’na şikâyet hakkınız saklıdır. Talebin size ait olduğunu doğrulamak için ek bilgi istenebilir.
-      Geliştirici; kelime listelerinizin, ilerlemenizin ve eklediğiniz içeriklerin bir kopyasını tutmaz. Destek yazışmaları ve
+      Geliştirici; kelime listelerinizin, ilerlemenizin ve eklediğiniz içeriklerin bir kopyasını tutmaz. Destek yazışmaları, yapay zekâ bildirimleri ve
       Google Play ile AdMob’un geliştiriciye sunduğu raporlar bu politikada açıklanan kapsamda işlenir. Cihazınızda tutulan verilerle
       ilgili talepler bu verileri silerek doğrudan sizin tarafınızdan da yerine getirilebilir.</p>
 
@@ -234,8 +241,8 @@
       <strong>In short:</strong> The App has no sign-up or user accounts, and the developer does not run a server that collects your data.
       Your words, progress and settings are stored on your device. Some features — such as translation, analysis and speech recognition —
       send the relevant text or audio to the third-party services listed below, and only when you use them.
-      The developer does not run a server that collects user data. Information about you reaches the developer directly only if you
-      email us (section 3). Apart from that, in Google Play Console the developer can see download, sales and subscription reports, and the
+      The developer does not host its own server. Information about you reaches the developer directly only if you
+      email us or report an AI response (section 3). Apart from that, in Google Play Console the developer can see download, sales and subscription reports, and the
       crash and “app not responding” reports that Android sends from devices with diagnostics sharing turned on (e.g. device model,
       Android and app version, error log). In AdMob the developer can see ad impression and revenue statistics. The scope of these
       reports is set by Google’s terms; the developer uses them only to improve the App and fix errors.
@@ -279,7 +286,7 @@
 
     <h3>Google ML Kit (on-device translation)</h3>
     <p>Words you tap (and, if you have no Groq key, all translations) are translated on your device with ML Kit. Language models are downloaded from Google; translation itself runs on your device and the translated
-      text does not leave it. ML Kit may send limited technical information (e.g. device information and usage metrics) to Google to operate the service.
+      text does not leave it. ML Kit may send Google limited technical information such as device and app information, performance and diagnostic metrics, and the selected source and target languages to operate the service and measure usage.
       <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms</a></p>
 
     <h3>YouTube</h3>
@@ -311,12 +318,17 @@
     <p>The <em>Send feedback</em> button in the App opens the email app on
       your device; the App itself sends no data.
       If you send the email, your email address, your message, the technical details added below it (app version, device model,
-      Android version, app language) reach the developer. When you report an AI response with <em>Report response</em>, the text of
-      that response, the reason you chose, the feature and the app version are also added to the email. You can edit or delete these before sending.
+      Android version, app language) reach the developer. You can edit or delete these before sending.
       This information is used only to reply to you and fix problems. Correspondence is stored through the Gmail service
       and is subject to Google’s applicable terms; the developer does not share it for marketing or other purposes. Legal obligations
       are reserved. Emails are kept in the developer’s Gmail account, i.e. on Google’s servers outside Turkey, for at most 2 years
       from the date of the last message. If there is a legal dispute or a statutory retention obligation, the relevant correspondence may be kept longer, only for as long as necessary. To have your correspondence deleted sooner, simply write to the same address.</p>
+    <p><strong>AI response reports:</strong> A report you send from the <em>Report response</em> window (the reason you chose, the text of
+      the AI response you report, your optional details, the feature, the app version and language) is sent from within the App, over an
+      encrypted connection, to a Google Sheets file in the developer’s Google account (via Google Apps Script). Your email address, name or
+      device ID are not sent with the report; while handling the request, Google may process technical information such as your IP address
+      under its own terms. Reports are used only to review AI content, prevent inappropriate responses and improve the features, and are
+      kept for at most 1 year; older reports are deleted automatically. Do not write personal or sensitive information such as your name, email address, phone number or health details in the details or paste field; if you do, it is sent with the report. Each successful report gets a random report number shown on screen; it is not a device ID and is not used to track you. If a report cannot be sent, you are offered the option to send it by email.</p>
 
     <h2>4. Legal grounds and transfers abroad</h2>
     <p><strong>How data is collected:</strong> Your personal data is obtained, by automated or partly automated means, through the
@@ -326,6 +338,7 @@
     <div class="tw"><table>
       <tr><th>Processing</th><th>Purpose</th><th>Legal ground (KVKK)</th><th>Where</th></tr>
       <tr><td data-label="Processing">Support emails</td><td data-label="Purpose">Replying to you, fixing problems</td><td data-label="Legal ground (KVKK)">Art. 5/2-f: legitimate interest (replying to communication you started)</td><td data-label="Where">Google (Gmail), abroad</td></tr>
+      <tr><td data-label="Processing">AI response reports</td><td data-label="Purpose">Reviewing the report, preventing inappropriate responses, improving the features</td><td data-label="Legal ground (KVKK)">Art. 5/2-f: legitimate interest (reviewing a report you started)</td><td data-label="Where">Google (Apps Script / Sheets), abroad</td></tr>
       <tr><td data-label="Processing">Ads (only after the free trial, for non-subscribers)</td><td data-label="Purpose">Serving and measuring ads, fraud prevention</td><td data-label="Legal ground (KVKK)">Processed by Google as a controller under its own terms; in the EEA, UK and Switzerland your consent is obtained through Google’s consent form</td><td data-label="Where">Google AdMob, abroad</td></tr>
       <tr><td data-label="Processing">Text and audio sent to Groq</td><td data-label="Purpose">Sentence analysis, word discovery, speaking and shadowing practice, sentence translation</td><td data-label="Legal ground (KVKK)">Art. 5/2-c: providing the feature you request (Terms of Use); sent directly from your device with your key</td><td data-label="Where">Groq, abroad</td></tr>
       <tr><td data-label="Processing">ML Kit technical data</td><td data-label="Purpose">Operating the on-device translation service, downloading language models</td><td data-label="Legal ground (KVKK)">Processed by Google under the ML Kit terms</td><td data-label="Where">Google, abroad</td></tr>
@@ -353,12 +366,13 @@
         or by uninstalling the App.</li>
       <li>You can remove your API keys at any time from the App’s Settings screen.</li>
       <li>To have emails you sent us deleted, write to <a href="mailto:gordionlingua@gmail.com">gordionlingua@gmail.com</a>.</li>
+      <li>To have an AI response report deleted, send the report number shown on screen to the same address.</li>
       <li>For data processed by third-party services, use that service’s own deletion options. Deleting data on your device does
         not delete data previously sent to these services; that data is subject to each service’s retention terms.</li>
     </ul>
 
     <h2>8. Security</h2>
-    <p>The App does not use a server that collects user data. The App communicates with third-party services over encrypted
+    <p>The developer does not use a self-hosted server; AI response reports are kept on Google’s infrastructure in a private sheet that only the developer can access, and reports older than one year are deleted automatically. The App communicates with third-party services over encrypted
       connections (HTTPS). App data and API keys are kept in Android’s private app storage, which other apps cannot access. API keys
       are not written to app logs and are not included in the App’s own backup file or in Android’s system backup.</p>
 
@@ -367,7 +381,7 @@
       under other laws such as the EU GDPR, write to <a href="mailto:gordionlingua@gmail.com">gordionlingua@gmail.com</a>.
       Requests are answered within 30 days at the latest under Article 13 of the KVKK. Your right to complain to the Turkish
       Personal Data Protection Board or your local data protection authority is reserved. Additional information may be requested to verify that the request is yours. The developer does not keep a copy of your word lists, progress or the content you add.
-      Support correspondence and the reports Google Play and AdMob provide to the developer are processed as described in this policy.
+      Support correspondence, AI response reports and the reports Google Play and AdMob provide to the developer are processed as described in this policy.
       Requests about data stored on your device can also be fulfilled directly by deleting that data.</p>
 
     <h2>10. Changes</h2>
@@ -391,8 +405,8 @@
       <strong>En resumen:</strong> La Aplicación no tiene registro ni cuentas de usuario, y el desarrollador no tiene un servidor que recopile tus datos.
       Tus palabras, tu progreso y tus ajustes se guardan en tu dispositivo. Algunas funciones —como la traducción, el análisis y el reconocimiento de voz—
       envían el texto o el audio correspondiente a los servicios de terceros indicados abajo, y solo cuando las usas.
-      El desarrollador no tiene un servidor que recopile datos de usuarios. La información sobre ti solo llega directamente al desarrollador
-      si nos escribes un correo (sección 3). Aparte de eso, en Google Play Console el desarrollador puede ver informes de descargas, ventas y suscripciones, y los
+      El desarrollador no aloja un servidor propio. La información sobre ti solo llega directamente al desarrollador
+      si nos escribes un correo o denuncias una respuesta de IA (sección 3). Aparte de eso, en Google Play Console el desarrollador puede ver informes de descargas, ventas y suscripciones, y los
       informes de fallos y de “la aplicación no responde” que Android envía desde dispositivos con el envío de diagnósticos activado
       (p. ej., modelo del dispositivo, versión de Android y de la app, registro de errores). En AdMob puede ver estadísticas de impresiones
       e ingresos publicitarios. El alcance de estos informes lo fijan los términos de Google; el desarrollador solo los usa para mejorar
@@ -437,7 +451,7 @@
 
     <h3>Google ML Kit (traducción en el dispositivo)</h3>
     <p>Las palabras que tocas (y, si no tienes clave de Groq, todas las traducciones) se traducen en tu dispositivo con ML Kit. Los modelos de idioma se descargan de Google; la traducción se realiza en tu dispositivo y el texto
-      traducido no sale de él. ML Kit puede enviar a Google información técnica limitada (p. ej., datos del dispositivo y métricas de uso) para prestar el servicio.
+      traducido no sale de él. ML Kit puede enviar a Google información técnica limitada como datos del dispositivo y de la aplicación, métricas de rendimiento y diagnóstico, y los idiomas de origen y destino elegidos para prestar el servicio y medir su uso.
       <a href="https://developers.google.com/ml-kit/terms">Términos de ML Kit</a></p>
 
     <h3>YouTube</h3>
@@ -470,13 +484,19 @@
     <p>El botón <em>Enviar comentarios</em> de la Aplicación
       abre la aplicación de correo de tu dispositivo; la Aplicación no envía ningún dato.
       Si envías el correo, nos llegan tu dirección de correo, tu mensaje, los datos técnicos añadidos debajo (versión de la aplicación,
-      modelo del dispositivo, versión de Android, idioma de la aplicación). Cuando denuncias una respuesta de IA con <em>Denunciar
-      respuesta</em>, también se añaden al correo el motivo que elegiste, el texto de esa respuesta, la función y la versión de la aplicación. Puedes editarlos o borrarlos antes de enviarlo.
+      modelo del dispositivo, versión de Android, idioma de la aplicación). Puedes editarlos o borrarlos antes de enviarlo.
       Esta información solo se usa para responderte y resolver problemas. La correspondencia se guarda mediante el servicio Gmail
       y está sujeta a los términos aplicables de Google; el desarrollador no la comparte con fines de marketing ni de otro tipo. Se
       reservan las obligaciones legales.
       Los correos se guardan en la cuenta de Gmail del desarrollador, es decir, en servidores de Google fuera de Turquía, durante un máximo
       de 2 años desde la fecha del último mensaje. Si existe una controversia legal o una obligación legal de conservación, la correspondencia correspondiente puede conservarse más tiempo, solo durante el tiempo necesario. Para que se eliminen tus mensajes antes, basta con escribir a la misma dirección.</p>
+    <p><strong>Denuncias de respuestas de IA:</strong> La denuncia que envías desde la ventana <em>Denunciar respuesta</em> (el motivo que
+      elegiste, el texto de la respuesta de IA denunciada, tus detalles opcionales, la función, la versión y el idioma de la aplicación) se
+      envía desde la propia Aplicación, mediante una conexión cifrada, a un archivo de Hojas de cálculo de Google en la cuenta de Google del
+      desarrollador (mediante Google Apps Script). Con la denuncia no se envían tu correo, tu nombre ni el ID de tu dispositivo; al procesar
+      la solicitud, Google puede tratar información técnica como tu dirección IP según sus propios términos. Las denuncias solo se usan para
+      revisar el contenido de IA, evitar respuestas inapropiadas y mejorar las funciones, y se conservan como máximo 1 año; las más antiguas se eliminan automáticamente. No escribas datos personales o sensibles, como tu nombre, correo, teléfono o datos de salud, en los campos de detalles o de texto pegado; si lo haces, se enviarán con la denuncia. Cada denuncia enviada recibe un número aleatorio que se muestra en pantalla; no es un ID del dispositivo ni se usa para rastrearte. Si una denuncia
+      no puede enviarse, se ofrece la opción de enviarla por correo.</p>
 
     <h2>4. Bases legales y transferencias al extranjero</h2>
     <p><strong>Forma de obtención:</strong> Tus datos personales se obtienen, por medios automatizados o parcialmente automatizados, a
@@ -486,6 +506,7 @@
     <div class="tw"><table>
       <tr><th>Tratamiento</th><th>Finalidad</th><th>Base legal (KVKK)</th><th>Dónde</th></tr>
       <tr><td data-label="Tratamiento">Correos de soporte</td><td data-label="Finalidad">Responderte, resolver problemas</td><td data-label="Base legal (KVKK)">Art. 5/2-f: interés legítimo (responder a la comunicación que iniciaste)</td><td data-label="Dónde">Google (Gmail), extranjero</td></tr>
+      <tr><td data-label="Tratamiento">Denuncias de respuestas de IA</td><td data-label="Finalidad">Revisar la denuncia, evitar respuestas inapropiadas, mejorar las funciones</td><td data-label="Base legal (KVKK)">Art. 5/2-f: interés legítimo (revisar una denuncia que iniciaste)</td><td data-label="Dónde">Google (Apps Script / Hojas de cálculo), extranjero</td></tr>
       <tr><td data-label="Tratamiento">Anuncios (solo al terminar la prueba, sin suscripción)</td><td data-label="Finalidad">Mostrar y medir anuncios, prevenir fraudes</td><td data-label="Base legal (KVKK)">Google los trata como responsable según sus propios términos; en el EEE, el Reino Unido y Suiza se pide tu consentimiento con el formulario de Google</td><td data-label="Dónde">Google AdMob, extranjero</td></tr>
       <tr><td data-label="Tratamiento">Texto y audio enviados a Groq</td><td data-label="Finalidad">Análisis de frases, descubrimiento de palabras, práctica de conversación y shadowing, traducción de frases</td><td data-label="Base legal (KVKK)">Art. 5/2-c: ofrecer la función que pides (Condiciones de uso); se envía directamente desde tu dispositivo con tu clave</td><td data-label="Dónde">Groq, extranjero</td></tr>
       <tr><td data-label="Tratamiento">Datos técnicos de ML Kit</td><td data-label="Finalidad">Prestar el servicio de traducción en el dispositivo, descargar modelos de idioma</td><td data-label="Base legal (KVKK)">Google los trata según los términos de ML Kit</td><td data-label="Dónde">Google, extranjero</td></tr>
@@ -513,12 +534,13 @@
         <em>Ajustes → Aplicaciones → Gordion Lingua → Almacenamiento → Borrar datos</em>, o desinstalando la Aplicación.</li>
       <li>Puedes eliminar tus claves API en cualquier momento desde la pantalla de Ajustes de la Aplicación.</li>
       <li>Para que eliminemos los correos que nos enviaste, escribe a <a href="mailto:gordionlingua@gmail.com">gordionlingua@gmail.com</a>.</li>
+      <li>Para que eliminemos una denuncia de respuesta de IA, envía a la misma dirección el número de denuncia que se mostró en pantalla.</li>
       <li>Para los datos tratados por servicios de terceros, usa las opciones de eliminación de cada servicio. Borrar los datos de tu
         dispositivo no elimina los datos enviados antes a estos servicios; se rigen por los plazos de conservación de cada servicio.</li>
     </ul>
 
     <h2>8. Seguridad</h2>
-    <p>La Aplicación no usa un servidor que recopile datos de usuarios. La Aplicación se comunica con los servicios de terceros mediante
+    <p>El desarrollador no usa un servidor propio; las denuncias de respuestas de IA se guardan en la infraestructura de Google, en una hoja privada a la que solo accede el desarrollador, y las de más de un año se eliminan automáticamente. La Aplicación se comunica con los servicios de terceros mediante
       conexiones cifradas (HTTPS). Los datos de la Aplicación y las claves API se guardan en el almacenamiento privado de Android, al que
       otras aplicaciones no pueden acceder. Las claves API no se escriben en los registros (logs) ni se incluyen en el archivo de copia de la propia Aplicación ni en la copia de seguridad del sistema Android.</p>
 
@@ -527,7 +549,7 @@
       similares según otras leyes como el RGPD de la UE, escribe a <a href="mailto:gordionlingua@gmail.com">gordionlingua@gmail.com</a>.
       Las solicitudes se responden en un plazo máximo de 30 días según el artículo 13 de la KVKK. Se reserva tu derecho a reclamar
       ante la Autoridad turca de Protección de Datos Personales o tu autoridad local. Puede pedirse información adicional para verificar que la solicitud es tuya. El desarrollador no guarda una copia de tus listas de palabras, tu progreso ni el contenido
-      que añades. La correspondencia de soporte y los informes que Google Play y AdMob ofrecen al desarrollador se tratan como se
+      que añades. La correspondencia de soporte, las denuncias de respuestas de IA y los informes que Google Play y AdMob ofrecen al desarrollador se tratan como se
       describe en esta política. Las solicitudes sobre los datos guardados en tu dispositivo también pueden atenderse directamente eliminándolos.</p>
 
     <h2>10. Cambios</h2>
