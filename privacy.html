@@ -94,12 +94,13 @@
       <li>Uygulamada açtığınız PDF ve e-kitap dosyaları (dosyalar bir sunucuya yüklenmez)</li>
       <li>Umay ile düğüm görevindeki ilerlemeniz, seriniz ve ödülleriniz (Umay’ın sesleri uygulamayla birlikte gelir ve cihazınızda çalınır)</li>
       <li>Ücretsiz deneme ve abonelik durumu, reklam izni tercihiniz</li>
+      <li>Deneme bittikten sonraki günlük ücretsiz yapay zekâ süresi için: kullanım günü, o gün kullanılan süre, ilk kullanımdaki saat dilimi ve sunucudan alınan saatin yerel kaydı</li>
       <li>Yedekleme özelliğiyle oluşturduğunuz yedek dosyası: dosya, sizin seçtiğiniz konuma (ör. telefonunuz veya kendi bulut
         depolamanız) yazılır ve geliştiriciye gönderilmez. API anahtarlarını, deneme ve abonelik bilgisini ve ses dosyalarını içermez. Yedek dosyası uygulama tarafından ayrıca şifrelenmez; bu yüzden onu yalnızca güvendiğiniz bir yerde saklayın.</li>
     </ul>
     <p>Cihazınızda Android’in Google hesabı yedeklemesi açıksa, bu veriler Android tarafından Google hesabınıza
       yedeklenebilir. Bu yedekleme Google’ın kontrolündedir ve cihaz ayarlarınızdan kapatılabilir. Bu sistem yedeği, uygulamanın
-      kendi yedek dosyasından farklıdır: yukarıdaki verilerin Android’in yedekleme kurallarına uyan kısmı (ör. ses kayıtları) bu sistem yedeğine girebilir. API anahtarlarınız ise Android’in Google hesabı yedeğine ve cihazdan cihaza aktarıma dahil edilmez; yeni bir cihazda anahtarınızı yeniden girmeniz gerekir.</p>
+      kendi yedek dosyasından farklıdır: yukarıdaki verilerin Android’in yedekleme kurallarına uyan kısmı (ör. ses kayıtları) bu sistem yedeğine girebilir. API anahtarlarınız ise Android’in Google hesabı yedeğine ve cihazdan cihaza aktarıma dahil edilmez; yeni bir cihazda anahtarınızı yeniden girmeniz gerekir. Günlük ücretsiz süre kaydı, uygulama yeniden kurulduğunda sürenin sıfırlanmaması için bu sistem yedeğine dahil edilebilir; saat doğrulamasında kullanılan cihaz içi zaman çapası ise yedeğe ve cihazdan cihaza aktarıma dahil edilmez.</p>
 
     <h2>2. Üçüncü taraf hizmetlere gönderilen veriler</h2>
     <p>Aşağıdaki özellikler çalışmak için ilgili hizmete veri gönderir. Uygulama bu verileri, sizin başlattığınız işlem için ilgili
@@ -259,12 +260,13 @@
       <li>PDF and e-book files you open in the App (files are not uploaded to any server)</li>
       <li>Your progress, streak and rewards in Umay’s knot quest (Umay’s voice lines ship with the App and play on your device)</li>
       <li>Free trial and subscription status, and your ad consent choice</li>
+      <li>For the daily free AI time after the trial: the usage day, the time used that day, the time zone at first use, and a local record of the time obtained from the server</li>
       <li>Backup files you create with the backup feature: the file is written to a location you choose (e.g. your phone or your own
         cloud storage) and is not sent to the developer. It does not contain API keys, trial or subscription data, or audio files. The backup file is not encrypted by the App, so keep it only in a place you trust.</li>
     </ul>
     <p>If Android’s Google account backup is enabled on your device, Android may back up this data to your Google account.
       That backup is controlled by Google and can be turned off in your device settings. This system backup is different from the
-      App’s own backup file: the part of the data above that meets Android’s backup rules (e.g. audio recordings) may be included in it. Your API keys, however, are excluded from Android’s Google account backup and from device-to-device transfer; on a new device you need to enter your key again.</p>
+      App’s own backup file: the part of the data above that meets Android’s backup rules (e.g. audio recordings) may be included in it. Your API keys, however, are excluded from Android’s Google account backup and from device-to-device transfer; on a new device you need to enter your key again. The daily free time record may be included in this system backup so that the time is not reset when the App is reinstalled; the on-device time anchor used for clock verification, however, is excluded from the backup and from device-to-device transfer.</p>
 
     <h2>2. Data sent to third-party services</h2>
     <p>The features below send data to the relevant service in order to work. The App sends this data to the relevant service for
@@ -424,12 +426,13 @@
       <li>Los archivos PDF y libros electrónicos que abras en la Aplicación (no se suben a ningún servidor)</li>
       <li>Tu progreso, racha y recompensas en la misión del nudo con Umay (las frases de voz de Umay vienen con la Aplicación y se reproducen en tu dispositivo)</li>
       <li>El estado de la prueba gratuita y de la suscripción, y tu elección de consentimiento para anuncios</li>
+      <li>Para el tiempo diario gratuito de IA tras la prueba: el día de uso, el tiempo usado ese día, la zona horaria del primer uso y un registro local de la hora obtenida del servidor</li>
       <li>El archivo de copia de seguridad que creas con la función de copia: se guarda en el lugar que elijas (p. ej., tu teléfono o tu
         propio almacenamiento en la nube) y no se envía al desarrollador. No contiene claves API, datos de prueba o suscripción ni archivos de audio. La Aplicación no cifra el archivo de copia, así que guárdalo solo en un lugar de confianza.</li>
     </ul>
     <p>Si la copia de seguridad de Android en tu cuenta de Google está activada, Android puede guardar estos datos en tu cuenta de Google.
       Esa copia está controlada por Google y puede desactivarse en los ajustes del dispositivo. Esta copia del sistema es distinta del
-      archivo de copia de la propia Aplicación: la parte de los datos anteriores que cumple las reglas de copia de Android (p. ej., las grabaciones) puede incluirse en ella. Tus claves API, en cambio, se excluyen de la copia de seguridad de Android en tu cuenta de Google y de la transferencia entre dispositivos; en un dispositivo nuevo tendrás que introducir tu clave de nuevo.</p>
+      archivo de copia de la propia Aplicación: la parte de los datos anteriores que cumple las reglas de copia de Android (p. ej., las grabaciones) puede incluirse en ella. Tus claves API, en cambio, se excluyen de la copia de seguridad de Android en tu cuenta de Google y de la transferencia entre dispositivos; en un dispositivo nuevo tendrás que introducir tu clave de nuevo. El registro del tiempo diario gratuito puede incluirse en esta copia del sistema para que el tiempo no se reinicie al reinstalar la Aplicación; el ancla de tiempo del dispositivo usada para verificar la hora, en cambio, se excluye de la copia y de la transferencia entre dispositivos.</p>
 
     <h2>2. Datos enviados a servicios de terceros</h2>
     <p>Las funciones siguientes envían datos al servicio correspondiente para funcionar. La Aplicación envía estos datos al servicio
